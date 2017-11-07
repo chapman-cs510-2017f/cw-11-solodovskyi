@@ -1,10 +1,8 @@
 # CS510 CW 11
 
-**Author(s):** _\<your name(s)\>_
+**Author(s):** **CHANGEME**
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2016f/cw-11-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2016f/cw-11-YOURNAME)
-
-**Due date:** 2016/11/15
+[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-11-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-11-YOURNAME)
 
 ## Specification
 
@@ -18,7 +16,7 @@ Complete the following exercises, saving your solutions in the indicated files.
     * [C Programming Wikibook](https://en.wikibooks.org/wiki/C_Programming)
     * [Learn Make in Y Minutes](https://learnxinyminutes.com/docs/make/)
 1. Examine the source code in ```src/matrix``` carefully. Finish coding the implementation.
-    1. In a Jupyter notebook ```Matrix.ipynb```, describe how the ```MATRIX``` type is defined and how it works in detail. Explain in particular the difference between "row-major ordering" and "column-major ordering" for multidimensional arrays, and which is the default in C.
+    1. In a Jupyter notebook ```Matrix.ipynb```, describe how the ```MATRIX``` type is defined and how it works in detail. Explain in particular the difference between "row-major ordering" and "column-major ordering" for multidimensional arrays, and indicate which is the default convention in C. (Is it the same convention as in Python?)
     1. Explain how you could force C to use the non-default array ordering if desired.
     1. Make sure that ```test_matrix``` in the ```test/``` folder compiles and runs correctly after you are finished implementing ```MATRIX```.
 1. Examine the source code in ```src/stack``` carefully. Finish coding the implementation.

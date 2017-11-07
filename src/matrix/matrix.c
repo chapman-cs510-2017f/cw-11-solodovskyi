@@ -20,7 +20,7 @@ MATRIX new_matrix(const MINDEX rows, const MINDEX cols) {
   // calloc zeroes out the memory that is allocated
   m.mat = (MVALUE *)calloc(rows * cols, sizeof(MVALUE));
   if (m.mat == NULL) {
-    fprintf(stderr, "Failed to allocate new_matrix\n");
+    fprintf(stderr, "ERROR: Failed to allocate new_matrix\n");
   }
   return m;
 }
@@ -32,7 +32,7 @@ void delete_matrix(MATRIX m) {
 
 void mset(MATRIX *m, const MINDEX row, const MINDEX col, const MVALUE v) {
   if (row < 0 || col < 0 || row >= m->rows || col >= m->cols) {
-    fprintf(stderr, "ERROR: indexing matrix outside bounds");
+    fprintf(stderr, "ERROR: Indexing matrix outside bounds\n");
     return;
   }
   // Find the pointer to the block of memory containing 

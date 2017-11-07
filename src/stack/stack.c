@@ -9,6 +9,10 @@ STACK new_stack() {
 
 void push_stack(STACK *s, SVALUE val) {
     STACK new = (STACK) malloc(sizeof(struct stack));
+    if (new == NULL) {
+        fprintf(stderr, "ERROR: Unable to push onto stack\n");
+        return;
+    }
     new->data = val;
     new->head = *s;
     *s = new;
@@ -18,7 +22,8 @@ SVALUE pop_stack(STACK *s) {
     SVALUE val;
     STACK temp;
     if (*s == NULL) {
-      val = -1;
+      fprintf(stderr, "ERROR: Attempt to pop value from empty stack\n");
+      val = SVALUE_ERR;
     }
     else {
       val = (*s)->data;
